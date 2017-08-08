@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+#proudRecommend {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+#proudRecommend img { border:0;}
+
+#proudRecommend { position:relative; width:950px; height:247px;}
+
+#proudRecommend > div { display:inline-block;}
+#proudRecommend > div:first-child { position:absolute; width:348px; margin:0 auto; text-align:center; top:40px; left:0; right:0; z-index:9999;}
+#proudRecommend > div a { transition: opacity 0.3s ease-out;}
+#proudRecommend > div a:hover { opacity:0.8;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

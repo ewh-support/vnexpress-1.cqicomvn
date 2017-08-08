@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+
+#footer .footer_upper a.item_link_inner {
+    text-decoration: none;
+}
+
+#footer .footer_middle a.item_link_inner{
+    text-decoration: none;
+}
+
+#footer .footer_upper a.item_link_inner:hover {
+    text-decoration: underline;
+}
+
+#footer .footer_middle a.item_link_inner:hover:hover{
+    text-decoration: underline;
+}
+
+
+#footer .footer_upper,
+#footer .footer_middle
+{
+    text-align: left;
+}
+
+/* /house_n/campaign/ */
+#tokyo #Wrapper,
+#saitama #Wrapper,
+#osaka #Wrapper,
+#kanagawa #Wrapper,
+#hyogo #Wrapper,
+#chiba #Wrapper
+{
+    width: 100%;
+}
+
+#footer .item_totop {
+    right: 10px;
+    margin: 0px;
+}

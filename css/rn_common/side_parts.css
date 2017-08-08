@@ -1,0 +1,740 @@
+@charset "utf-8";
+
+/* --------------------------------------
+ 　side original (mansion)
+ -------------------------------------- */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* 野村の仲介＋の充実サービス
+ * ------------------------- */
+.side_linklist_color {
+	overflow: hidden;
+	/* ie7 */
+	*zoom: 1;
+}
+
+.side_linklist_color .tit{
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	background-color:#151b5f;
+	width:188px;
+	height:42px;
+	color:#fff;
+	text-align:center;
+	padding-top:7px;
+	margin-bottom:10px;
+	line-height:1.2;
+	font-weight:bold;
+}
+
+/* list_item */
+.side_linklist_color .list_item {
+	line-height: 1.2;
+	overflow: visible;
+}
+.side_linklist_color .list_item a {
+	display: block;
+	padding-left: 18px;
+	line-height: 1.5;
+	vertical-align: middle;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left center;
+	cursor: pointer;
+}
+.side_linklist_color .list_item a span {
+	display: inline-block;
+	width: 170px;
+	line-height: 1.2;
+	vertical-align: middle;
+
+	font-weight: bold;
+	background: url(../../images/rn_common/icon_side_arrow.png) no-repeat 98% center;
+}
+.side_linklist_color .list_item a:hover span{
+	background-image: url(../../images/rn_common/icon_side_arrow_on.png);
+}
+
+/* skin */
+.side_linklist_color .skin_gold a {
+	background-image: url(../../images/rn_common/line1.png);
+}
+.side_linklist_color .skin_navy a {
+	background-image: url(../../images/rn_common/line2.png);
+}
+.side_linklist_color .skin_orange a {
+	background-image: url(../../images/rn_common/line3.png);
+}
+
+
+/* list_item */
+.side_linklist_icon .list_item {
+	display: table;
+	width: 140px;
+	height: 30px;
+	padding-left: 43px;
+	line-height: 1.2;
+
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin-top: 10px;
+	/* ie7 */
+	*position: relative;
+	*display: block;
+	*line-height: 1.4;
+}
+.side_linklist_icon .list_item .inner {
+	display: table-cell;
+	vertical-align: middle;
+	/* ie7 */
+	*position: absolute;
+	*margin-top: 15px;
+	*height: 30px;
+}
+.side_linklist_icon .list_item .inner a {
+	/* ie7 */
+	*display: inline;
+	*zoom: 1;
+	*vertical-align: middle;
+	*margin-top: -12%;
+}
+.side_linklist_icon .list_item:hover a {
+	color: #f00;
+	text-decoration: none;
+}
+
+/* icon */
+.side_linklist_icon .icon_book {
+	background-image: url(../../images/rn_common/icon_side_guide.png);
+}
+.side_linklist_icon .icon_calculator {
+	background-image: url(../../images/rn_common/icon_side_simulation.png);
+}
+.side_linklist_icon .icon_house {
+	background-image: url(../../images/rn_common/icon_side_reform.png);
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* 売却を検討の方へ
+ * ------------------------- */
+.side_selling {
+	overflow: hidden;
+	/* ie7 */
+	*zoom: 1;
+}
+
+/* text */
+.side_selling .text {
+	padding: 0 5px;
+	line-height: 1.3;
+
+}
+
+/* link */
+.side_selling .link a {
+	display: block;
+	border-top: solid 2px #d34833;
+	border-right: solid 2px #d34833;
+	border-left: solid 2px #d34833;
+	border-bottom:solid 2px #aa2a17;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	line-height:32px;
+	text-align:center;
+	color: #fff;
+
+	font-weight:bold;
+	text-decoration:none;
+	background:url(../../images/rn_common/icon_side_arrow3.png) no-repeat 30px center #d34833;
+}
+
+.side_selling .link a:hover {
+	display: block;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	background-image:url(../../images/rn_common/icon_side_arrow3_on.png);
+	background-color: #ffffff;
+	border: solid 2px #d34833;
+	color: #d34833 !important;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* サポートデスク
+ * ------------------------- */
+.side_freedial{
+	color:#ec3c42;
+	font-size:157.1%;
+	font-weight:bold;
+}
+
+.side_title_ribbon {
+	padding: 11px 0 18px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-image: url(../../images/rn_common/bg_side_text1.png);
+}
+
+/* title */
+.side_title_ribbon .title {
+	padding-left: 49px;
+	font-weight:bold;
+	background-repeat: no-repeat;
+	background-position: 15px center;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* 売却を検討の方へ
+ * ------------------------- */
+
+/* skin */
+.side_title_ribbon.bg_black {
+	color: #fab71a;
+	background-image: url(../../images/rn_common/bg_side_text2.png);
+}
+
+/* icon */
+.side_title_ribbon .icon_hat {
+	background-image: url(../../images/rn_common/icon_side_knowledge.png);
+}
+.side_title_ribbon .icon_scales {
+	background-image: url(../../images/rn_common/icon_side_consult.png);
+}
+.side_title_ribbon .icon_tel {
+	background-image: url(../../images/rn_common/icon_side_support.png);
+}
+
+
+/* --------------------------------------
+ 　side common (mansion)
+ -------------------------------------- */
+
+/* side_block
+ * ------------------------- */
+.side_block {
+	margin-bottom: 13px;
+	overflow: hidden;
+	/* ie7 */
+	*zoom: 1;
+}
+
+/* skin */
+.side_box_border.box_pd10 {
+	padding: 10px;
+}
+
+.side_box_border.box_pd3 {
+	padding: 3px;
+}
+
+
+/* side_link_arrow
+ * ------------------------- */
+.side_link_arrow {
+	padding-left: 14px;
+	background: url(../../images/rn_common/icon_arrow1.png) no-repeat left center;
+}
+.linkbox:hover .side_link_arrow a {
+	color: #f00;
+	text-decoration: none;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/*   グレー見出し / グレーボックス
+ * ------------------------- */
+
+/*  item_section_head
+--------------------------------------------- */
+#columnR .side_block_head {
+	position: relative;
+	padding: 10px 14px 10px;
+	border: 1px solid #d3d3d3;
+	border-radius: 2px 2px 0 0;
+	background-color: #f0f0f0;
+}
+
+/* -- item_section_title -- */
+#columnR .side_block_title {
+	font-size: 115%;
+	font-weight: bold;
+}
+
+/*  item_section_body
+--------------------------------------------- */
+#columnR .side_block_body {
+	border-right: 1px solid #d3d3d3;
+	border-bottom: 1px solid #d3d3d3;
+	border-left: 1px solid #d3d3d3;
+	border-radius: 0 0 2px 2px;
+	background-color: #fff;
+}
+
+#columnR .side_block.skin_glaybox .side_block_body {
+	padding: 15px 15px 17px;
+}
+
+/* box
+ * ------------------------- */
+
+/* side_box_border */
+.side_box_border {
+	padding: 15px;
+	border-top: 1px solid #d3d3d3;
+	border-left: 1px solid #d3d3d3;
+	border-right: 1px solid #d3d3d3;
+	border-bottom: 1px solid #d3d3d3;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/*   前回の検索条件から探す
+ * ------------------------- */
+
+/*  item_section_body (skin)
+--------------------------------------------- */
+#columnR .side_block.skin_service .side_block_body {
+	padding: 15px 15px 17px;
+}
+
+
+/* -- item_searchlinks -- */
+
+/* item_searchlink */
+#columnR .item_searchlink {
+	padding: 13px 10px 12px 16px;
+	border-top: 1px solid #d3d3d3;
+}
+
+/* item_searchlink (skin) */
+#columnR .item_searchlink.item_1 {
+	border-top: 0;
+}
+
+/* item_searchlink_inner */
+#columnR .item_searchlink_inner {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 1.25;
+}
+
+/* item_searchlink_inner (skin) */
+#columnR .item_searchlink.skin_new .item_searchlink_inner {
+	padding-left: 48px;
+	background: url(../../images/rn_common/icon_new.png) left top no-repeat;
+}
+
+/* item_searchlink_inner - item_num_wrapper */
+#columnR .item_searchlink_inner .item_num_wrapper {
+	display: inline-block;
+	font-size: 86%;
+	color: #2d2d2d;
+	margin-left: 5px;
+}
+
+/* item_searchlink_inner - item_num */
+#columnR .item_searchlink_inner .item_num {
+	color: #dd1c11;
+}
+
+/* item_searchlink_inner - item_num */
+#columnR .item_searchlink_inner .item_num {
+	color: #dd1c11;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/*   CM公開中
+ * ------------------------- */
+
+#columnR .side_block.cm .side_block_head {
+	padding-top: 5px;
+	padding-bottom: 4px;
+	border-color: #003058;
+	background-color: #003058;
+}
+
+#columnR .side_block.cm .side_block_title {
+	color: #fff;
+	text-align:center;
+}
+
+#columnR .side_block.cm .side_block_body {
+	border-right: 1px solid #003058;
+	border-bottom: 1px solid #003058;
+	border-left: 1px solid #003058;
+	border-radius: 0 0 2px 2px;
+	background-color: #fff;
+	cursor:pointer;
+}
+
+#columnR .side_block.cm .side_block_body:hover img{
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	-ms-filter: "alpha(opacity=70)";
+}
+
+#columnR .side_block.cm .side_block_body {
+	padding: 10px 10px 0px;
+}
+
+/* item_service */
+#columnR .thumnail {
+	position:relative;
+	width:198px;
+	height:105px;
+}
+
+#columnR .thumnail img{
+	z-index:0;
+}
+
+#columnR .thumnail i{
+	position:absolute;
+	display:block;
+	width:198px;
+	height:105px;
+	background: url(../../images/rn_common/icon_player.png) center center no-repeat;
+	z-index:1;
+}
+
+#columnR .cm_link {
+	line-height:30px;
+	text-align:center;
+	font-weight:bold;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/*   野村の仲介
+ * ------------------------- */
+
+#columnR .side_block.nomura .side_block_head {
+	border-top: 1px solid #d3d3d3;
+	border-right: 1px solid #d3d3d3;
+	border-left: 1px solid #d3d3d3;
+	border-radius: 2px 2px 0 0;
+	background:#FFF;
+}
+
+#columnR .side_block.nomura{
+	cursor:pointer;
+}
+
+#columnR .side_block.nomura:hover{
+		opacity: 0.7;
+	filter: alpha(opacity=70);
+	-ms-filter: "alpha(opacity=70)";
+}
+
+#columnR .side_block_bottom {
+	padding: 5px 0px;
+	border: 1px solid #21345f;
+	border-radius: 0 0 2px 2px;
+	background-color: #21345f;
+	text-align:center;
+}
+
+#columnR .side_block_bottom a{
+	color:#FFF;
+	font-weight:bold;
+}
+
+
+#columnR .side_block_bottom_inner {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1.25;
+	padding-right: 16px;
+	background: url(../../images/rn_common/arrow_right_white.png) right center no-repeat;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/*   店舗のご案内 / セミナー情報
+ * ------------------------- */
+
+#columnR .side_block.shop .side_block_head_type2{
+	text-align:center;
+	font-weight:bold;
+	border-bottom:solid 1px #a90000;
+	padding-bottom:12px;
+	line-height:1;
+	margin-bottom:10px;
+}
+
+#columnR .side_block.shop p{
+	line-height:1.3;
+	text-align:center;
+}
+
+#columnR .item_link {
+	margin-top: 10px;
+	cursor:pointer;
+}
+
+#columnR .item_link{/*下の色*/
+	position:relative;
+	display: block;
+	border-radius:3px;
+	border:2px solid #21345f;
+	background:#112145;
+	color:#21345f;
+	z-index:0;
+	height:38px;
+	text-align:center;
+	line-height:38px;
+}
+
+#columnR .item_link a{
+	color:#fff;
+	font-weight:bold
+}
+
+#columnR .item_link:hover a{
+	color:#21345f;
+}
+
+#columnR .item_link:after {/*上の色*/
+	position:absolute;
+	content:'';
+	border-radius:3px;
+	background:#21345f;
+	width:100%;
+	height:36px;
+	z-index:-1;
+	top:0;
+	left:0;
+}
+
+#columnR .item_link:hover{
+	background:#fff;/*下の色*/
+}
+
+#columnR .item_link:hover:after {
+	background:#fff;/*上の色*/
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/*  ノムコム会員サービス
+ * ------------------------- */
+
+/*  item_section_head (skin)
+--------------------------------------------- */
+#columnR .side_block.skin_service .side_block_head {
+	padding-top: 5px;
+	padding-bottom: 4px;
+	border-color: #57bae3;
+	background-color: #57bae3;
+}
+#columnR .side_block.skin_service .side_block_head:after {
+	content: "";
+	position: absolute;
+	top: 7px;
+	right: 5px;
+	display: block;
+	width: 39px;
+	height: 0;
+	padding-top: 39px;
+	overflow: hidden;
+	background: url(../../common/images/icon_sidebar_free.png) center center no-repeat;
+}
+
+/* -- item_section_title (skin) -- */
+#columnR .side_block.skin_service .side_block_title {
+	color: #fff;
+}
+
+/* -- item_services -- */
+#columnR .item_services {
+	margin-bottom: 10px;
+}
+
+/* item_service */
+#columnR .item_service {
+	line-height: 1.25;
+	font-size: 93%;
+	padding-left: 33px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	margin-top: 6px;
+}
+
+/* item_service (skin) */
+#columnR .item_service.item_1 {
+	background-image: url(../../common/images/icon_sidebar_num1.png);
+	margin-top: 0;
+}
+#columnR .item_service.item_2 {
+	background-image: url(../../common/images/icon_sidebar_num2.png);
+}
+#columnR .item_service.item_3 {
+	background-image: url(../../common/images/icon_sidebar_num3.png);
+}
+
+/* item_service - item_marked */
+#columnR .item_service .item_marked {
+	color: #ef3c79;
+	font-size: 108%;
+	font-weight:bold;
+}
+
+
+/* -- item_sercive_bnr -- */
+#columnR .item_sercive_bnr {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+/* item_sercive_bnr_link */
+#columnR .item_sercive_bnr_link {
+	display: block;
+}
+
+#columnR .item_sercive_bnr_link img:hover{
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	-ms-filter: "alpha(opacity=70)";
+}
+
+/* -- item_servicelink_detail -- */
+#columnR .item_servicelink_detail {
+	text-align: right;
+	margin-bottom: 9px;
+}
+
+/* item_servicelink_detail_inner */
+#columnR .item_servicelink_detail_inner {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1.25;
+	padding-left: 12px;
+	background: url(../../common/images/arrow_right_black.png) left center no-repeat;
+}
+
+/* -- item_servicelink_conversion -- */
+#columnR .item_servicelink_conversion {
+	position: relative;
+}
+#columnR .item_servicelink_conversion:before {
+	content: "";
+	position: absolute;
+	top: -49px;
+	left: -32px;
+	z-index: 2;
+	display: block;
+	width: 118px;
+	height: 0;
+	padding-top: 57px;
+	overflow: hidden;
+	background: url(../../common/images/img_sidebar_pigs.png) center center no-repeat;
+}
+
+
+/* item_servicelink_conversion_inner */
+#columnR .item_servicelink_conversion_inner {
+	position: relative;
+	display: block;
+	text-align: center;
+	line-height: 1.25;
+	font-weight: bold;
+	color: #fff;
+	padding: 8px 0;
+	border: 2px solid #42a5ce;
+	/*border-bottom-width: 3px;*/
+	border-radius: 2px;
+	background-color: #42a5ce;
+}
+#columnR .item_servicelink_conversion_inner:hover {
+	color: #42a5ce;
+	background-color: #fff;
+}
+#columnR .item_servicelink_conversion_inner:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 13px;
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 4.5px 0 4.5px 9px;
+	border-color: transparent transparent transparent #42a5ce;
+	margin-top: -4.5px;
+}
+#columnR .item_servicelink_conversion_inner:hover:after {
+	border-color: transparent transparent transparent #fff;
+}
+
+/* -- item_servicelink_login -- */
+#columnR .item_servicelink_login {
+	margin-top: 10px;
+}
+
+/* item_servicelink_login_inner */
+#columnR .item_servicelink_login_inner {
+	display: block;
+	text-align: center;
+	padding: 6px 0;
+	border: 1px solid #d5d3d3;
+	border-radius: 2px;
+}
+
+/* item_servicelink_login_text */
+#columnR .item_servicelink_login_text {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	line-height: 1.25;
+	font-weight: bold;
+	padding-left: 33px;
+	background: url(../../common/images/icon_sidebar_login.png) left center no-repeat;
+}
+
+
+
+
+/* side_pr
+ * ------------------------- */
+
+.side_pr{
+	background-color:#F0F0F0;
+	padding:10px 10px 0;
+	border-radius:3px;
+}
+
+.side_pr .tit{
+	text-align:center;
+	font-weight:bold;
+	margin-bottom:8px;
+
+}
+
+.side_pr img{
+	margin-bottom:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

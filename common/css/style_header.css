@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+
+#header_middle {
+    padding-top: 33px !important;
+}
+
+#header_middle .item_area .item_link {
+    color: #1565c0;
+    text-decoration: none;
+}
+
+#header_middle .item_links .item_link .item_link_inner {
+    color: #1565c0;
+    text-decoration: none;
+}
+
+#header_middle .item_area a.item_link:hover {
+    color: #f00;
+}
+
+#header_middle .item_links .item_link a.item_link_inner:hover{
+    color: #f00;
+}

@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+
+/* slideshow
+================================================== */
+.slideOuter{
+	padding-top:8px;
+
+}
+.slideOuter .slideInner{
+	background: url(../../images/rn_top/slide_bottom.png) no-repeat center bottom;
+	width:950px;
+	padding-bottom:14px;
+	position: relative;
+}
+.item_slide{
+	display:none;
+
+}
+.banner {
+}
+.banner .main {
+	height: 217px;
+}
+.banner .main ul.mainul {
+	height: 217px;
+}
+.banner .main ul li {
+	position: absolute;
+	top: 0;
+}
+.banner .thumbnail {
+	position: absolute;
+	width: 182px;
+	height: 217px;
+	top: 0;
+	right: -2px;
+	/*overflow: hidden;*/
+}
+.banner .thumbnail .slide_area {
+	position: relative;
+	padding: 4px 0 4px 10px;
+	height: 163px;
+	overflow: hidden;
+}
+.banner .thumbnail .slide_area div {
+
+}
+.banner .thumbnail .current {
+	position: absolute;
+	top: 80px;
+	left: -4px;
+}
+
+.banner .thumbnail .btn{
+	margin-left:10px;
+
+}
+.banner .thumbnail .prev{
+	background: transparent url(../../images/rn_top/slide_prev_off.png) no-repeat left bottom;
+	width: 170px;
+	height:23px;
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+	cursor: pointer;
+}
+.banner .thumbnail .prev:hover{
+	background: transparent url(../../images/rn_top/slide_prev_on.png) no-repeat left bottom;
+}
+.banner .thumbnail .next{
+	background: transparent url(../../images/rn_top/slide_next_off.png) no-repeat left bottom;
+	width: 170px;
+	height:23px;
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+	cursor: pointer;
+}
+.banner .thumbnail .next:hover{
+	background: transparent url(../../images/rn_top/slide_next_on.png) no-repeat left bottom;
+}
+
+.banner .thumbnail .thumb{
+	padding-bottom:5px;
+
+}
+.banner .thumbnail a {
+	width: 170px;
+	display: block;
+	height: 51px;
+	overflow: hidden;
+}
+.banner .thumbnail .btn a {
+	width: 170px;
+	display: block;
+	height: 23px;
+	overflow: hidden;
+}
+.banner .thumbnail .home10,
+.banner .thumbnail .home11,
+.banner .thumbnail .home12,
+.banner .thumbnail .home13,
+.banner .thumbnail .home14,
+.banner .thumbnail .home15,
+.banner .thumbnail .home16,
+.banner .thumbnail .home1,
+.banner .thumbnail .home2,
+.banner .thumbnail .home3,
+.banner .thumbnail .home4,
+.banner .thumbnail .home5,
+.banner .thumbnail .home7,
+.banner .thumbnail .home8,
+.banner .thumbnail .home9{
+
+	width: 186px;
+}
+
+.banner .thumbnail .home1 a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_off.png) no-repeat 0 0;width: 170px;}
+.banner .thumbnail .home1.active a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_on.png) no-repeat 0 0;}
+
+.banner .thumbnail .home2 a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_mansion_off.png) no-repeat 0 0;width: 170px;}
+.banner .thumbnail .home2.active a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_mansion_on.png) no-repeat 0 0;}
+
+.banner .thumbnail .home3 a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_house_off.png) no-repeat 0 0;width: 170px;}
+.banner .thumbnail .home3.active a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_house_on.png) no-repeat 0 0;}
+
+.banner .thumbnail .home4 a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_bukken_off.png) no-repeat 0 0;width: 170px;}
+.banner  .thumbnail .home4.active a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_bukken_on.png) no-repeat 0 0;}
+
+.banner .thumbnail .home5 a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_cp_off.png) no-repeat 0 0;width: 170px;}
+.banner  .thumbnail .home5.active a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_cp_on.png) no-repeat 0 0;}
+
+.banner .thumbnail .home7 a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_plus_off.png) no-repeat 0 0;width: 170px;}
+.banner  .thumbnail .home7.active a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_plus_on.png) no-repeat 0 0;}
+
+.banner .thumbnail .home8 a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_tyuukai_off.png) no-repeat 0 0;width: 170px;}
+.banner  .thumbnail .home8.active a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_tyuukai_on.png) no-repeat 0 0;}
+
+.banner .thumbnail .home9 a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_staging_off.png) no-repeat 0 0;width: 170px;}
+.banner  .thumbnail .home9.active a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_staging_on.png) no-repeat 0 0;}
+
+.banner .thumbnail .home10 a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_senryu_off.png) no-repeat 0 0;width: 170px;}
+.banner  .thumbnail .home10.active a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_senryu_on.png) no-repeat 0 0;}
+
+.banner .thumbnail .home11 a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_kansai_off.png) no-repeat 0 0;width: 170px;}
+.banner  .thumbnail .home11.active a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_kansai_on.png) no-repeat 0 0;}
+
+.banner .thumbnail .home12 a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_nomura_off.png) no-repeat 0 0;width: 170px;}
+.banner  .thumbnail .home12.active a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_nomura_on.png) no-repeat 0 0;}
+
+.banner .thumbnail .home13 a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_pj_off.png) no-repeat 0 0;width: 170px;}
+.banner  .thumbnail .home13.active a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_pj_on.png) no-repeat 0 0;}
+
+.banner .thumbnail .home14 a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_plus_off.png) no-repeat 0 0;width: 170px;}
+.banner  .thumbnail .home14.active a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_plus_on.png) no-repeat 0 0;}
+
+.banner .thumbnail .home15 a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_answer_off.png) no-repeat 0 0;width: 170px;}
+.banner  .thumbnail .home15.active a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_answer_on.png) no-repeat 0 0;}
+
+.banner .thumbnail .home16 a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_newhouse10year_off.jpg) no-repeat 0 0;width: 170px;}
+.banner  .thumbnail .home16.active a {background: transparent url(../../images/rn_top/slide/menu/slide_sam_newhouse10year_on.jpg) no-repeat 0 0;}
+
+
+/*slide1
+----------------------*/
+.banner #image001{
+  background:url(../../images/rn_top/slide/01/slide_01.jpg);
+  width:772px;
+  height:217px;
+  position: relative;
+}
+
+.banner .mainimg{
+  display:none;
+}

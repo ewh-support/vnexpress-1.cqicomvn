@@ -1,0 +1,2053 @@
+@charset "UTF-8";
+
+/* --------------------------------------
+ 　copy css
+ -------------------------------------- */
+
+/*-------------------------------------
+*
+* rn_catetop.cssから、下記のみ流用
+*
+*-------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*------------------------------ */
+/* #content
+ -------------------------------- */
+#content {
+	margin: 0 auto;
+	width: 950px;
+	overflow:hidden;
+	zoom:1;
+}
+
+/* ---------------------------------------------
+*   main
+--------------------------------------------- */
+#main {
+	float: left;
+	box-sizing: border-box;
+	width: 710px;
+}
+
+.section{
+	margin-bottom:40px;
+	overflow:hidden;
+	zoom:1;
+}
+
+/*------------------------------ */
+/* #columnL
+ -------------------------------- */
+#columnL {
+	float: left;
+	margin-right: 20px;
+	width: 710px;
+	box-sizing: border-box;
+}
+
+
+/*------------------------------ */
+/* #columnR
+ -------------------------------- */
+#columnR {
+	float: right;
+	box-sizing: border-box;
+	width: 220px;
+}
+
+.clearfix:after {/*float*/
+	display: block;
+	clear: both;
+	height: 0px;
+	visibility: hidden;
+	content: ".";
+}
+.clearfix {
+	min-height: 1px; /*IE6??7*/
+}
+* html .clearfix {
+	height: 1px;
+	height: auto;
+	overflow: hidden;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* メインスライダー
+ * ------------------------- */
+/* ---------------------------------------------
+*   keyvisual
+--------------------------------------------- */
+#keyvisual {
+	height: 274px;
+	padding-top: 11px;
+	overflow: hidden;
+	border-bottom: 1px solid #e5e5e5;
+	background-color: #f3f3f3;
+}
+/* -- 東海用 -- */
+#toukai #keyvisual {
+	background-color: #fff;
+	border: none;
+	height: auto;
+}
+
+/*  item_slides (override bxslider)
+--------------------------------------------- */
+#keyvisual .bx-wrapper {
+	margin-bottom: 27px;
+	/* some styles are dynamically set in /js/top/script.js (keyvisual (carousel)) */
+}
+#keyvisual .bx-wrapper .bx-viewport {
+	left: auto;
+	border: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	/* some styles are dynamically set in /js/top/script.js (keyvisual (carousel)) */
+}
+.bx-wrapper .bx-controls-direction a {
+	width: 36px;
+	height: 37px;
+	margin-top: -18.5px;
+}
+#keyvisual .bx-wrapper .bx-prev,
+#keyvisual .bx-wrapper .bx-prev:hover {
+	left: 50%;
+	background: url(../../images/rn_top/btn_prev.png) 0 0 no-repeat;
+	margin-left: -511px;
+}
+#keyvisual .bx-wrapper .bx-next,
+#keyvisual .bx-wrapper .bx-next:hover {
+	right: 50%;
+	background: url(../../images/rn_top/btn_next.png) 0 0 no-repeat;
+	margin-right: -511px;
+}
+#keyvisual .bx-wrapper .bx-pager,
+#keyvisual .bx-wrapper .bx-controls-auto {
+	right: 0;
+	left: 0;
+	height: 17px;
+}
+#keyvisual .bx-wrapper .bx-pager.bx-default-pager a {
+	width: 28px;
+	height: 3px;
+	background: #c7c7c7;
+	margin: 0 3.5px;
+}
+#keyvisual .bx-wrapper .bx-pager.bx-default-pager a:hover,
+#keyvisual .bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #2d2d2d;
+}
+
+/* -- item_overlay (original element) -- */
+#keyvisual .bx-wrapper .item_overlay {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	z-index: 2;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.5);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.5)";
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0.5);
+}
+
+/* -- item_overlay (skin) -- */
+#keyvisual .bx-wrapper .item_overlay.skin_left {
+	right: 50%;
+	/* some styles are dynamically set in /js/top/script.js (keyvisual (carousel)) */
+}
+#keyvisual .bx-wrapper .item_overlay.skin_right {
+	left: 50%;
+	/* some styles are dynamically set in /js/top/script.js (keyvisual (carousel)) */
+}
+
+
+/*  item_slides (common)
+--------------------------------------------- */
+/* some styles are dynamically set in /js/top/script.js (keyvisual (carousel)) */
+/*#keyvisual .item_slides {}*/
+
+/* -- item_slide -- */
+#keyvisual .item_slide {
+	float: left;
+	box-sizing: border-box;
+	width: 950px;
+}
+
+/* -- item_slide_inner -- */
+#keyvisual .item_slide_inner {
+	display: block;
+	overflow: hidden;
+}
+
+/* -- 東海用 -- */
+#toukai #keyvisual .item_slide_inner {
+	margin: 0 auto;width: 950px;
+}
+
+/*  item_slides (skin_bg_house)
+--------------------------------------------- */
+/* -- item_slide -- */
+#keyvisual .item_slide.skin_bg_house {
+	padding: 3.5px 7px;
+	background-color: #ff6600;
+}
+
+/* item_links */
+#keyvisual .item_slide.skin_bg_house .item_links {
+	float: left;
+	overflow: hidden;
+}
+
+/* item_link */
+#keyvisual .item_slide.skin_bg_house .item_link {
+	float: left;
+	width: 221px;
+	border-top: 1px solid #ff6600;
+	border-right: 1px solid #ff6600;
+}
+
+/* item_link (skin) */
+#keyvisual .item_slide.skin_bg_house .item_link.item_1,
+#keyvisual .item_slide.skin_bg_house .item_link.item_3,
+#keyvisual .item_slide.skin_bg_house .item_link.item_5,
+#keyvisual .item_slide.skin_bg_house .item_link.item_7 {
+	clear: both;
+}
+#keyvisual .item_slide.skin_bg_house .item_link.item_1,
+#keyvisual .item_slide.skin_bg_house .item_link.item_2 {
+	border-top: 0;
+}
+
+/* item_link_inner */
+#keyvisual .item_slide.skin_bg_house .item_link_inner {
+	display: block;
+	background-color: #fff;
+}
+#keyvisual .item_slide.skin_bg_house .item_link_inner:hover {
+	background-color: #FFCC80;
+}
+
+/* item_thumbnails */
+#keyvisual .item_slide.skin_bg_house .item_thumbnails {
+	float: left;
+	position: relative;
+	width: 315px;
+	height: 240px;
+}
+
+/* item_thumbnail */
+#keyvisual .item_slide.skin_bg_house .item_thumbnail {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 0;
+}
+
+/* item_thumbnail (skin) */
+#keyvisual .item_slide.skin_bg_house .item_thumbnail.skin_hover {
+	opacity: 1;
+	z-index: 1;
+}
+
+/* item_arealinks */
+#keyvisual .item_slide.skin_bg_house .item_arealinks {
+	float: left;
+	border-left: 1px solid #ff6600;
+}
+
+/* item_area */
+#keyvisual .item_slide.skin_bg_house .item_area {
+	border-top: 1px solid #ff6600;
+}
+
+/* item_area_inner */
+#keyvisual .item_slide.skin_bg_house .item_area_inner {
+	display: block;
+	background-color: #fff;
+}
+#keyvisual .item_slide.skin_bg_house .item_area_inner:hover {
+	background-color: #ff6600;
+}
+
+/*  item_slides (mansion)
+--------------------------------------------- */
+/* -- item_slide -- */
+#keyvisual .item_slide.mansion {
+	padding: 3.5px 4px;
+	background-color: #009900;
+}
+
+/* item_links */
+#keyvisual .item_slide.mansion .item_links {
+	float: left;
+	overflow: hidden;
+}
+
+/* item_link */
+#keyvisual .item_slide.mansion .item_link {
+	float: left;
+	width: 221px;
+	border-top: 1px solid #009900;
+	border-right: 1px solid #009900;
+}
+
+/* item_link (skin) */
+#keyvisual .item_slide.mansion .item_link.item_1,
+#keyvisual .item_slide.mansion .item_link.item_3,
+#keyvisual .item_slide.mansion .item_link.item_5,
+#keyvisual .item_slide.mansion .item_link.item_7 {
+	clear: both;
+}
+#keyvisual .item_slide.mansion .item_link.item_1,
+#keyvisual .item_slide.mansion .item_link.item_2 {
+	border-top: 0;
+}
+
+/* item_link_inner */
+#keyvisual .item_slide.mansion .item_link_inner {
+	display: block;
+	background-color: #fff;
+}
+#keyvisual .item_slide.mansion .item_link_inner:hover {
+	background-color: #80CC80;
+}
+
+/* item_thumbnails */
+#keyvisual .item_slide.mansion .item_thumbnails {
+	float: left;
+	position: relative;
+	width: 493px;
+	height: auto;
+	margin: 3px 0 0 3px;
+}
+
+/* item_thumbnail */
+#keyvisual .item_slide.mansion .item_thumbnail {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 0;
+}
+
+/* item_thumbnail (skin) */
+#keyvisual .item_slide.mansion .item_thumbnail.skin_hover {
+	opacity: 1;
+	z-index: 1;
+}
+
+/* item_arealinks */
+#keyvisual .item_slide.mansion .item_arealinks {
+	float: left;
+	border-left: 1px solid #009900;
+}
+
+/* item_area */
+#keyvisual .item_slide.mansion .item_area {
+	border-top: 1px solid #009900;
+}
+
+/* item_area_inner */
+#keyvisual .item_slide.mansion .item_area_inner {
+	display: block;
+	background-color: #fff;
+}
+#keyvisual .item_slide.mansion .item_area_inner:hover {
+	background-color: #009900;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* 物件を買う / 売る
+ * ------------------------- */
+/* ---------------------------------------------
+*   guide
+--------------------------------------------- */
+#guide {
+	margin: 24px 0 28px;
+}
+
+
+/*  guide_column
+--------------------------------------------- */
+#guide .guide_column {
+	box-sizing: border-box;
+	border-right: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+	border-left: 1px solid #e7e7e7;
+	border-radius: 0 0 2px 2px;
+}
+
+/*  guide_column (skin)
+--------------------------------------------- */
+#guide .guide_column.skin_buyer {
+	float: left;
+	width: 613px;
+}
+#guide .guide_column.skin_seller {
+	float: right;
+	width: 324px;
+}
+
+
+/*  guide_column_upper
+--------------------------------------------- */
+#guide .guide_column_upper {
+	padding-top: 14px;
+	padding-bottom: 15px;
+	overflow: hidden;
+	border-top-width: 3px;
+	border-style: solid;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+/* -- item_title -- */
+#guide .guide_column_upper .item_title {
+	float: left;
+	letter-spacing: -0.4em;
+}
+
+#guide .guide_column_upper .item_title span{
+	float: left;
+}
+
+/* item_title_jpn / item_title_eng */
+#guide .guide_column_upper .item_title_jpn,
+#guide .guide_column_upper .item_title_eng {
+	display: inline-block;
+	vertical-align: middle;
+	letter-spacing: normal;
+	padding-top: 22px;
+}
+
+/* item_title_jpn */
+#guide .guide_column_upper .item_title_jpn {
+	margin-right: 10px;
+}
+
+/* item_title_eng */
+#guide .guide_column_upper .item_title_eng {
+	background-position: center 6px
+}
+
+/* -- item_link -- */
+#guide .guide_column_upper .item_link {
+	float: right;
+	padding-top: 3px;
+}
+
+/* item_link_inner */
+#guide .guide_column_upper .item_link_inner {
+	font-size: 92.8%;
+}
+
+
+/*  guide_column_upper (skin)
+--------------------------------------------- */
+#guide .guide_column.skin_buyer .guide_column_upper {
+	padding-right: 14px;
+	padding-left: 14px;
+	border-top-color: #bddd0e;
+	background-color: #f5fbd7;
+}
+#guide .guide_column.skin_seller .guide_column_upper {
+	padding-right: 8px;
+	padding-left: 10px;
+	border-top-color: #fab71a;
+	background-color: #fef3d8;
+}
+
+/* -- item_title_jpn (skin) -- */
+#guide .guide_column.skin_buyer .item_title_jpn {
+	width: 102px;
+	background-image: url(../../images/rn_top/text_guide_buy1.png);
+}
+#guide .guide_column.skin_seller .item_title_jpn {
+	width: 104px;
+	background-image: url(../../images/rn_top/text_guide_sell1.png);
+}
+
+/* -- item_title_eng (skin) -- */
+#guide .guide_column.skin_buyer .item_title_eng {
+	width: 76px;
+	background-image: url(../../images/rn_top/text_guide_buy2.png);
+}
+#guide .guide_column.skin_seller .item_title_eng {
+	width: 79px;
+	background-image: url(../../images/rn_top/text_guide_sell2.png);
+}
+
+
+/*  guide_column_middle
+--------------------------------------------- */
+
+/* -- item_headings -- */
+#guide .guide_column_middle .item_headings {
+	padding: 10px 6px 11px;
+	overflow: hidden;
+	background-color: #fff;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+/* item_heading */
+#guide .guide_column_middle .item_heading {
+	float: left;
+	position: relative;
+	z-index: 0;
+	background-color: #fff;
+	margin-right: 6px;
+}
+#guide .guide_column_middle .item_heading:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 0;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 100%;
+	height: 1px;
+}
+
+/* item_heading (skin) */
+#guide .guide_column.skin_buyer .item_heading:after {
+	background-color: #bddd0e;
+}
+#guide .guide_column.skin_seller .item_heading:after {
+	background-color: #fab71a;
+}
+#guide .item_heading.skin_mansion {
+	width: 235px;
+}
+#guide .item_heading.skin_house {
+	width: 235px;
+}
+#guide .item_heading.skin_land {
+	width: 117px;
+	margin-right: 0;
+}
+
+#kansai #guide .item_heading.skin_mansion ,
+#toukai #guide .item_heading.skin_mansion {
+	width: 295px;
+}
+#kansai #guide .item_heading.skin_house ,
+#toukai #guide .item_heading.skin_house {
+	width: 146px;
+}
+#kansai #guide .item_heading.skin_land ,
+#toukai　#guide .item_heading.skin_land {
+	width: 146px;
+	margin-right: 0;
+}
+
+#guide .item_heading.skin_assessment {
+	width: 100%;
+	margin-right: 0;
+}
+
+/* item_heading_inner */
+#guide .item_heading .item_heading_inner {
+	position: relative;
+	z-index: 2;
+	padding-top: 14px;
+	padding-right: 6px;
+	background-position: left center;
+	background-color: #fff;
+}
+
+/* item_heading_inner (skin) */
+#guide .item_heading.skin_mansion .item_heading_inner {
+	width: 106px;
+	background-image: url(../../images/rn_top/text_guide_buy3.png);
+}
+#guide .item_heading.skin_house .item_heading_inner {
+	width: 96px;
+	background-image: url(../../images/rn_top/text_guide_buy4.png);
+}
+#guide .item_heading.skin_land .item_heading_inner {
+	width: 41px;
+	background-image: url(../../images/rn_top/text_guide_buy5.png);
+}
+#guide .item_heading.skin_assessment .item_heading_inner {
+	width: 139px;
+	background-image: url(../../images/rn_top/text_guide_sell3.png);
+}
+
+/* item_panellinks_wrapper */
+#guide .item_panellinks_wrapper {
+	padding: 5px 6px 6px;
+	overflow: hidden;
+	background-color: #eee;
+}
+
+/* item_panellinks */
+#guide .item_panellinks {/* 2個 幅 */
+	float: left;
+	width: 235px;
+	overflow: hidden;
+	margin-right: 6px;
+}
+
+#kansai #guide .item_panellinks.skin_mansion ,/* 2個 幅 */ /*------------- 関西用 東海用 ------------------*/
+#toukai #guide .item_panellinks.skin_mansion {
+	float: left;
+	width: 295px;
+	overflow: hidden;
+}
+
+/* item_panellinks (skin) */
+#guide .item_panellinks.skin_single {/* 土地 | 不動産無料査定 幅 */
+	width: 117px;
+	margin-right: 0;
+}
+#toukai #guide .item_panellinks.skin_single {
+
+width: 310px;
+}
+
+#kansai #guide .item_panellinks.skin_single.skin_house,
+#kansai #guide .item_panellinks.skin_single.skin_land,
+#toukai #guide .item_panellinks.skin_single.skin_house,
+#toukai #guide .item_panellinks.skin_single.skin_land
+{/* 一戸建て 土地 幅 */ /*------------- 関西用 東海用------------------*/
+	width: 146px;
+	margin-right: 0;
+}
+
+#kansai #guide .item_panellinks.skin_single.skin_house,
+#toukai #guide .item_panellinks.skin_single.skin_house{ /*------------- 関西用 東海用------------------*/
+	margin-right:6px;
+}
+
+#guide.kansai .item_panellinks.skin_single,
+#guide.toukai.item_panellinks.skin_single {/* 不動産無料査定 幅 */
+	width: 117px;
+	margin-right: 0;
+}
+
+#guide .item_panellinks.skin_vertical {/* | スピード売却 売却相談 幅 */
+	width: 187px;
+	margin-right: 0;
+	margin-left: 6px;
+}
+
+/* item_panellink */
+#guide .guide_column_middle .item_panellink {
+	float: left;
+}
+
+/* item_panellink (skin) */
+#guide .item_panellinks.skin_vertical .item_panellink + .item_panellink {
+	margin-top: 5px;
+}
+
+/* item_panellink_inner */
+#guide .item_panellink_inner {/* aタグ */
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+	height: 99px;
+	text-align: center;
+	padding: 66px 0 12px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	font-weight:bold;
+}
+
+#guide .item_panellink_inner.skin_mansion_new,
+#guide .item_panellink_inner.skin_house_new{/* aタグ */
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+	width: 116px!important;
+	height: 99px;
+	text-align: center;
+	padding: 66px 0 12px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	font-weight:bold;
+}
+
+#guide .item_panellink_inner.skin_mansion_used,
+#guide .item_panellink_inner.skin_house_used{/* aタグ */
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+	width: 116px!important;
+	height: 99px;
+	text-align: center;
+	padding: 66px 0 12px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	font-weight:bold;
+}
+
+#kansai #guide .item_panellink_inner.skin_mansion_new,
+#kansai #guide .item_panellink_inner.skin_mansion_used,
+#toukai #guide .item_panellink_inner.skin_mansion_new,
+#toukai #guide .item_panellink_inner.skin_mansion_used{/* aタグ */ /*------------- 関西用 -東海用-----------------*/
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+	width: 146px!important;
+	height: 99px;
+	text-align: center;
+	padding: 66px 0 12px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	font-weight:bold;
+}
+
+#kansai #guide .item_panellink_inner.skin_house_used,
+#kansai #guide .item_panellink_inner.skin_land,
+#toukai #guide .item_panellink_inner.skin_house_used,
+#toukai #guide .item_panellink_inner.skin_land{/* aタグ */ /*------------- 関西用 東海用------------------*/
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+	width: 144px!important;
+	height: 99px;
+	text-align: center;
+	padding: 66px 0 12px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	font-weight:bold;
+}
+
+#guide .item_panellink_inner.skin_land,
+#guide .item_panellink_inner.skin_assessment{/* aタグ 土地 不動産無料査定*/
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+	width: 115px;
+	height: 99px;
+	text-align: center;
+	padding: 66px 0 12px;
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	font-weight:bold;
+}
+
+#toukai #guide .item_panellink_inner.skin_assessment{
+	width: 308px;
+	height: 148px;
+	padding: 64px 0 0 50px;
+}
+
+
+#guide .item_panellink_inner:hover,
+#kansai #guide .item_panellink_inner:hover,
+#toukai #guide .item_panellink_inner:hover{/*------------- 関西用 -東海用-----------------*/
+	background-color: #e7e7e7;
+}
+
+#guide .guide_column .item_panellink_inner:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	box-sizing: border-box;
+	display: block;
+	height: 100%;
+}
+
+#guide .guide_column .item_panellinks_wrapper ul.item_panellinks li.item_panellink {
+	border-top: 1px solid #e7e7e7;
+	border-right: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+#guide .guide_column .item_panellinks_wrapper ul.item_panellinks li.item_panellink:first-child {
+	border-left: 1px solid #e7e7e7;
+}
+
+#guide .guide_column .item_panellinks_wrapper ul.skin_land li.item_panellink {
+	border-right: 1px solid #e7e7e7;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* 物件を買う / 売る　マウスオーバー
+ * ------------------------- */
+#guide .guide_column .item_panellinks_wrapper ul.item_panellinks li.item_2:hover {
+	box-shadow: -1px 0px 0px 0px #6da30f;
+}
+#guide .guide_column .item_panellinks_wrapper ul.item_panellinks li.item_panellink:hover {
+	border-top: 1px solid #6da30f;
+	border-right: 1px solid #6da30f;
+	border-bottom: 1px solid #6da30f;
+}
+#guide .guide_column .item_panellinks_wrapper ul.item_panellinks li.item_panellink:first-child:hover {
+	border-left: 1px solid #6da30f;
+}
+#guide .guide_column.skin_seller .item_panellinks_wrapper ul.item_panellinks li.item_panellink {
+	border: 1px solid #e7e7e7;
+}
+#guide .guide_column.skin_seller .item_panellinks_wrapper ul.item_panellinks li.item_panellink:hover {
+	border: 1px solid #e08408;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+#guide .item_panellink + .item_panellink .item_panellink_inner {
+	width: 115px;
+}
+
+#kansai #guide .item_panellink + .item_panellink .item_panellink_inner.skin_mansion_used,
+#toukai #guide .item_panellink + .item_panellink .item_panellink_inner.skin_mansion_used {/*------------- 関西用 東海用------------------*/
+	width: 146px;
+}
+
+#guide .item_panellinks.skin_vertical .item_panellink_inner {
+	width: 185px;
+	height: 46px;
+	padding: 0;
+}
+
+#guide .item_panellink_inner.skin_mansion_new {
+	border-radius: 2px 0 0 2px;
+	background-image: url(../../images/rn_top/icon_mansion_new.png);
+	background-position: center 9px;
+}
+#guide .item_panellink_inner.skin_mansion_used {
+	border-radius: 0 2px 2px 0;
+	background-image: url(../../images/rn_top/icon_mansion_used.png);
+	background-position: center 19px;
+}
+#guide .item_panellink_inner.skin_house_new {
+
+border-radius: 2px 0 0 2px;
+
+background-image: url(../../images/rn_top/icon_house_new.png);
+
+background-position: center 10px;
+}
+#guide .item_panellink_inner.skin_house_used {
+	border-radius: 0 2px 2px 0;
+	background-image: url(../../images/rn_top/icon_house_used.png);
+	background-position: center 17px;
+}
+#guide .item_panellink_inner.skin_land {
+	border-radius: 2px;
+	background-image: url(../../images/rn_top/icon_land.png);
+	background-position: center 15px;
+}
+#guide .item_panellink_inner.skin_assessment {
+	border-radius: 2px;
+	background-image: url(../../images/rn_top/icon_assessment.png);
+	background-position: center 16px;
+}
+#toukai #guide .item_panellink_inner.skin_assessment {
+	background-position: 50px 50%;
+	font-size: 18px;
+}
+#guide .item_panellink_inner.skin_land:before,
+#guide .item_panellink_inner.skin_assessment:before,
+#guide .item_panellink_inner.skin_consulting:before {
+	right: 1px;
+}
+
+/* item_panellink_text (skin) */
+#guide .item_panellink_inner .item_panellink_text {
+	position: relative;
+	display: block;
+	text-align: left;
+	letter-spacing: -0.03em;
+	padding: 14px 0 11px;
+	font-weight:bold;
+}
+#guide .item_panellink_inner .item_panellink_text:before,
+#guide .item_panellink_inner .item_panellink_text:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: block;
+	height: 0;
+	padding-top: 46px;
+	overflow: hidden;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#guide .item_panellink_inner.skin_speed .item_panellink_text {
+	padding-left: 43px;
+}
+#guide .item_panellink_inner.skin_speed .item_panellink_text:before {
+	left: 8px;
+	width: 31px;
+	background-image: url(../../images/rn_top/icon_assessment_left.png);
+}
+#guide .item_panellink_inner.skin_speed .item_panellink_text:after {
+	right: 6px;
+	width: 48px;
+	background-image: url(../../images/rn_top/icon_assessment_right.png);
+}
+#guide .item_panellink_inner.skin_consulting .item_panellink_text {
+	padding-left: 80px;
+}
+#guide .item_panellink_inner.skin_consulting .item_panellink_text:before {
+	left: 45px;
+	width: 22px;
+	background-image: url(../../images/rn_top/icon_consulting.png);
+	background-position: center 16px;
+}
+
+/*  guide_column_lower
+--------------------------------------------- */
+#guide .guide_column_lower {
+	padding: 0 6px 6px;
+	background-color: #eee;
+	height:90px;
+}
+#toukai #guide .guide_column_lower{
+	height: 43px;
+	margin-top: -4px;
+}
+/* -- item_table_wrapper -- */
+#guide .item_table_wrapper {
+	overflow: hidden;
+	margin-top: 4px;
+}
+
+/* -- item_table_wrapper (skin) -- */
+#guide .item_table_wrapper.item_1 {
+	margin-top: 0;
+}
+
+/* item_table */
+#guide .item_table {
+	width: 100%;
+}
+
+/* item_table (skin) */
+#guide .item_table_wrapper.skin_2_column .item_table {
+	width: 297px;
+}
+#guide .item_table_wrapper.skin_2_column .item_table.item_1 {
+	float: left;
+}
+#guide .item_table_wrapper.skin_2_column .item_table.item_2 {
+	float: right;
+}
+#guide .item_table_wrapper.skin_vertical .item_table {
+	float:left\9;/* lte IE9 */
+	display: block;
+	width: 100%\9;/* lte IE9 */
+}
+
+/* item_table - tbody (skin) */
+#guide .item_table_wrapper.skin_vertical tbody {
+	float:left\9;/* lte IE9 */
+	display: block;
+	width: 100%\9;/* lte IE9 */
+}
+
+/* item_table - tbody (skin) */
+#guide .item_table_wrapper.skin_vertical tr {
+	float:left\9;/* lte IE9 */
+	display: block;
+	width: 100%\9;/* lte IE9 */
+}
+
+/* item_table - th */
+#guide .item_table th {
+	width: 108px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #e2e2e2;
+	border-radius: 2px 0 0 2px;
+	background-color: #fff;
+}
+
+/* item_table - th (skin) */
+#guide .item_table_wrapper.skin_vertical th {
+	float:left\9;/* lte IE9 */
+	display: block;
+	width: auto;
+	width: 100%\9;/* lte IE9 */
+	padding: 12px 0 11px;
+	border-radius: 2px 2px 0 0;
+}
+
+/* item_table - item_title */
+#guide .item_table .item_title {
+	display: inline-block;
+	padding-top: 12px;
+}
+
+/* item_table - item_title (skin) */
+#guide .item_table .item_title.skin_recommend {
+	width: 72px;
+	background-image: url(../../images/rn_top/text_guide_buy6.png);
+}
+#guide .item_table .item_title.skin_pro {
+	width: 73px;
+	background-image: url(../../images/rn_top/text_guide_buy7.png);
+}
+#guide .item_table .item_title.skin_biz {
+	width: 74px;
+	background-image: url(../../images/rn_top/text_guide_buy8.png);
+}
+#guide .item_table .item_title.skin_support {
+	width: 174px;
+	background-image: url(../../images/rn_top/text_guide_sell4.png);
+}
+
+/* item_table - td */
+#guide .item_table td {
+	text-align: left;
+	vertical-align: middle;
+	border: 1px solid #e2e2e2;
+	border-radius: 0 2px 2px 0;
+	background-color: #fbfbfb;
+}
+
+/* item_table - td (skin) */
+#guide .item_table_wrapper.skin_vertical td {
+	float:left\9;/* lte IE9 */
+	display: block;
+	width: auto;
+	width: 100%\9;/* lte IE9 */
+	border-top-width: 0;
+	border-radius: 0 0 2px 2px;
+}
+
+/* item_table - item_links */
+#guide .item_table .item_links {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	padding: 12px 20px 11px;
+	background-color: #fbfbfb;
+}
+
+/* item_table - item_links (skin) */
+#guide .item_table_wrapper.skin_vertical .item_links {
+	padding-top: 5px;
+
+	height:52px;
+}
+
+/* item_table - item_link */
+#guide .item_table .item_link {
+	float: left;
+	box-sizing: border-box;
+	padding-left: 11px;
+	background: url(../../common/images/arrow_right_black.png) left center no-repeat;
+	margin-left: 24px;
+}
+
+/* item_table - item_link (skin) */
+#guide .item_table_wrapper.skin_vertical .item_link {
+	margin-left: 0;
+}
+#guide .item_table_wrapper.skin_vertical .item_link.item_2 {
+	margin-left: 33px;
+}
+#guide .item_table_wrapper.skin_vertical .item_link.item_4 {
+	margin-left: 20px;
+}
+
+/* item_table - item_link (skin) */
+#guide .item_table .item_link.item_1 {
+	margin-left: 0;
+}
+
+/* item_table - item_link_inner */
+#guide .item_table .item_link_inner {
+	/* font-size: 92.8%; */
+}
+
+/* item_table - item_logolink_wrapper */
+#guide .item_table .item_logolink_wrapper {
+	padding: 8px 0;
+}
+
+/* item_table - item_logolink */
+#guide .item_table .item_logolink {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	letter-spacing: -0.4em;
+	/* font-size: 92.8%; */
+}
+
+/* item_table - item_logolink_image */
+#guide .item_table .item_logolink_image {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 12px;
+}
+
+/* item_table - item_logolink_text */
+#guide .item_table .item_logolink_text {
+	display: inline-block;
+	vertical-align: middle;
+	letter-spacing: normal;
+}
+
+/* item_table - item_logolink_new_window */
+#guide .item_table .item_logolink_new_window {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+
+/* --------------------------------------
+ 　module
+ -------------------------------------- */
+
+/* module_searchword
+ * ------------------------- */
+.module_searchword {
+	letter-spacing: -.40em;
+	overflow: hidden;
+	/* ie7 */
+	*zoom: 1;
+}
+
+/* item */
+.module_searchword input {
+	float: left;
+	vertical-align: middle;
+	letter-spacing: normal;
+}
+
+/* keyword */
+.module_searchword .keyword {
+	display: block;
+	width: 135px;
+	height: 32px;
+	padding: 0 7px;
+	line-height: 32px;
+	border: 1px solid #d3d3d3;
+	border-radius: 3px 0 0 3px;
+	-webkit-border-radius: 3px 0 0 3px;
+	-moz-border-radius: 3px 0 0 3px;
+	color: #a2a2a2;
+	font-size:85.7%;
+	outline: none;
+}
+
+.module_searchword .keyword_map {
+	display: block;
+	width: 128px;
+	height: 32px;
+	padding: 0 7px;
+	line-height: 32px;
+	border: 1px solid #d3d3d3;
+	border-radius: 3px 0 0 3px;
+	-webkit-border-radius: 3px 0 0 3px;
+	-moz-border-radius: 3px 0 0 3px;
+	color: #a2a2a2;
+	font-size:85.7%;
+	outline: none;
+}
+
+/* button */
+.module_searchword .button {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	display: block;
+	width: 35px;
+	height: 34px;
+	/*padding-top:34px;*/
+	border: none;
+	border-radius: 0 3px 3px 0;
+	-webkit-border-radius: 0 3px 3px 0;
+	-moz-border-radius: 0 3px 3px 0;
+	font-size: 85.7%;
+	text-indent: -99999px;
+	background: url(../../images/rn_common/icon_search_small.png) no-repeat center center #4d4d4d;
+	overflow: hidden;
+	outline: none;
+	cursor: pointer;
+}
+
+/* skin */
+.module_searchword.color_red .button{
+	background-image: url(../../images/rn_common/icon_search_small2.png);
+	background-color: #d34833;
+}
+
+
+/* 注目情報PR
+ * ------------------------- */
+.module_attention{
+	width:500px;
+	border-left:1px solid #c0c0c0;
+	border-right:1px solid #c0c0c0;
+	border-top:1px solid #c0c0c0;
+	margin:0 auto 40px;
+}
+
+/* attention_head */
+.attention_head{
+	padding:3px 5px;
+	border-bottom:1px solid #c0c0c0;
+	color:#fff;
+
+	font-weight:bold;
+	background-color:#c0c0c0;
+}
+
+/* attention_body */
+.attention_body{
+	overflow: hidden;
+	/* ie7 */
+	*zoom:1;
+}
+
+/* attention_cassette */
+.attention_cassette{
+	height:132px;
+	padding:10px;
+	border-bottom:1px solid #c0c0c0;
+	overflow: hidden;
+	/* ie7 */
+	*zoom:1;
+}
+/* cassette_image */
+.attention_cassette .cassette_image{
+	float:left;
+	width:140px;
+}
+.attention_cassette .cassette_image img{
+	max-width:100%;
+}
+/* cassette_body */
+.attention_cassette .cassette_body{
+	margin-left:150px;
+}
+.attention_cassette .cassette_body .title{
+	color:#0c3575;
+
+	font-weight:bold;
+	text-decoration:underline;
+	margin-bottom:5px;
+}
+.attention_cassette .cassette_body .body{
+	color:#0c3575;
+}
+.attention_cassette .cassette_body .text{
+	height:87px;
+	line-height:2;
+	font-size:85.7%;
+}
+.attention_cassette .cassette_body .link{
+	text-align:right;
+
+	font-weight:bold;
+}
+.attention_cassette .cassette_body .link a{
+	color:#0c3575;
+}
+
+/* hover */
+.attention_cassette:hover .cassette_body .title,
+.attention_cassette:hover .cassette_body .body,
+.attention_cassette:hover .cassette_body .link a{
+	color:#f00;
+}
+
+
+
+/* module_text_pr
+ * ------------------------- */
+.module_text_pr{
+	margin: 0 auto;
+	width: 920px;
+	padding:10px 15px;
+	line-height:2;
+	font-size:85.7%;
+	background-color:#F7F6F6;
+	margin-bottom:20px;
+}
+
+
+/* h3 Title
+ * ------------------------- */
+
+.topTitle{
+	border-bottom: 3px solid #bddd0e;
+	padding-bottom:7px;
+	margin-bottom:20px;
+	overflow:hidden;
+	zoom:1;
+}
+
+.topTitle h3{
+	font-size:157.1%;
+	font-weight:bold;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* マウスオーバーの色一括変更
+ * ------------------------- */
+
+
+.selection_Area li:hover a,
+.osusume_Area li:hover a{
+	color:#F00;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* 新築・分譲物件セレクション
+ * ------------------------- */
+
+.selection_Area li{
+	float:left;
+	width:164px;
+	margin-left: 18px;
+	cursor: pointer;
+}
+
+.selection_Area li:first-child{
+	margin-left:0px;
+}
+
+.selection_Area li .title{
+	margin:10px 0 5px;
+	font-size:107.1%;
+	font-weight:bold;
+	line-height:1.2;
+}
+
+.selection_Area li .title a{
+	font-weight:bold;
+}
+
+.selection_Area li:hover img{
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	-ms-filter: "alpha(opacity=70)";
+}
+
+/* 野村ブランドの中古マンション*/
+
+/* item_link_image */
+#kansai .selection_Area .item_link_image{
+	position:relative;
+	display: block;
+	text-align: center;
+	height: 110px;
+	overflow: hidden;
+	margin-bottom: 11px;
+}
+
+#kansai .selection_Area .item_link_image img{
+	position:absolute;
+	width:164px;
+	top:-27px;
+	left:0px;
+}
+
+/* item_type */
+#kansai .selection_Area .item_type{
+	display: block;
+	width: 100px;
+	text-align: center;
+	font-size: 93%;
+	font-weight: bold;
+	color: #fff;
+	padding: 1px 0;
+	border-radius: 2px;
+	background-color: #6dc6f9;
+	margin: 0 auto 10px;
+}
+
+/* item_name */
+#kansai .selection_Area .item_name {
+	display: block;
+	font-weight: bold;
+	overflow: hidden;
+	line-height:1.2;
+	margin-bottom: 7px;
+	font-size:107.1%;
+}
+
+#kansai .selection_Area .item_name a{
+	font-weight:bold;
+}
+
+/* item_price */
+#kansai .selection_Area .item_price {
+	display: block;
+	letter-spacing: -0.4em;
+	margin-bottom: 7px;
+	font-size:107.1%;
+}
+
+/* item_price - num / unit */
+#kansai .selection_Area .item_price .num,
+#kansai .selection_Area .item_price .unit{
+	display: inline-block;
+	letter-spacing: normal;
+	line-height: 1.25;
+	font-weight: bold;
+}
+
+/* item_price - num */
+#kansai .selection_Area .item_price .num{
+	font-size: 115%;
+	color: #da171e;
+}
+
+/* item_price - unit */
+#kansai .selection_Area .item_price .unit{
+	font-size: 93%;
+}
+
+/* item_info */
+#kansai .selection_Area .item_info {
+	display: block;
+	line-height: 1.25;
+	overflow: hidden;
+}
+/* オススメ物件ピックアップ*/
+/* item_link_image */
+#toukai .selection_Area .item_link_image {
+	position:relative;
+	display: block;
+	text-align: center;
+	height: 110px;
+	overflow: hidden;
+	margin-bottom: 11px;
+}
+
+#toukai .selection_Area .item_link_image img{
+	position:absolute;
+	width:164px;
+	top:-27px;
+	left:0px;
+}
+
+/* item_type */
+#toukai .selection_Area .item_type {
+	display: block;
+	width: 100px;
+	text-align: center;
+	font-size: 93%;
+	font-weight: bold;
+	color: #fff;
+	padding: 1px 0;
+	border-radius: 2px;
+	background-color: #6dc6f9;
+	margin: 0 auto 10px;
+}
+
+/* item_name */
+#toukai .selection_Area .item_name {
+	display: block;
+	font-weight: bold;
+	overflow: hidden;
+	line-height:1.2;
+	margin-bottom: 7px;
+	font-size:107.1%;
+}
+#toukai .selection_Area .item_name a{
+	font-weight:bold;
+}
+
+/* item_price */
+#toukai .selection_Area .item_price {
+	display: block;
+	letter-spacing: -0.4em;
+	margin-bottom: 7px;
+	font-size:107.1%;
+}
+
+/* item_price - num / unit */
+#toukai .selection_Area .item_price .num,
+#toukai .selection_Area .item_price .unit {
+	display: inline-block;
+	letter-spacing: normal;
+	line-height: 1.25;
+	font-weight: bold;
+}
+
+/* item_price - num */
+#toukai .selection_Area .item_price .num {
+	font-size: 115%;
+	color: #da171e;
+}
+
+/* item_price - unit */
+#toukai .selection_Area .item_price .unit {
+	font-size: 93%;
+}
+
+/* item_info */
+#toukai .selection_Area .item_info {
+	display: block;
+	line-height: 1.25;
+	overflow: hidden;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* おすすめ情報
+ * ------------------------- */
+
+.osusume_Area li {
+	float: left;
+	width: 164px;
+	height:210px;
+	margin-left: 18px;
+	cursor: pointer;
+}
+
+.osusume_Area li:first-child{
+	margin-left:0px;
+}
+
+
+.bnr_Area{
+	overflow:hidden;
+	zoom:1;
+	width:100%;
+	height:103px;
+	display:block;
+	padding-top:20px;
+}
+
+.bnr_Area li.bnr {
+	float: left;
+	width: 346px;
+	height:103px;
+	margin-left: 18px;
+}
+
+.bnr_Area li.bnr:first-child{
+	margin-left:0px;
+}
+
+
+.osusume_Area .title {
+	margin:10px 0 5px;
+	font-size:107.1%;
+	font-weight:bold;
+	line-height:1.2;
+	text-align: center;
+}
+
+.osusume_Area .nomura,
+.osusume_Area .rank,
+.osusume_Area .library,
+.osusume_Area .tower,
+.osusume_Area .premium{
+	position:relative;
+}
+
+.osusume_Area .nomura img,
+.osusume_Area .rank img,
+.osusume_Area .library img,
+.osusume_Area .tower img,
+.osusume_Area .premium img{
+	z-index:0;
+}
+
+.osusume_Area .nomura i{
+	position:absolute;
+	display:block;
+	top:-4px;
+	left:0px;
+	background: url(../../images/rn_common/library_icon_nomura.png) no-repeat;
+	width:31px;
+	height:60px;
+    z-index:1;
+}
+
+.osusume_Area .library i{
+	position:absolute;
+	display:block;
+	top:-4px;
+	left:0px;
+	background: url(../../images/rn_common/library_icon_library.png) no-repeat;
+	width:31px;
+	height:60px;
+    z-index:1;
+}
+
+.osusume_Area .tower i{
+	position:absolute;
+	display:block;
+	top:-4px;
+	left:0px;
+	background: url(../../images/rn_common/library_icon_tower.png) no-repeat;
+	width:31px;
+	height:60px;
+    z-index:1;
+}
+
+.osusume_Area .premium i{
+	position:absolute;
+	display:block;
+	top:-4px;
+	left:0px;
+	background: url(../../images/rn_common/library_icon_premium.png) no-repeat;
+	width:31px;
+	height:60px;
+    z-index:1;
+}
+
+.osusume_Area .rank{
+	position:relative;
+}
+
+.osusume_Area .rank i{
+	position:absolute;
+	display:block;
+	top:-4px;
+	left:0px;
+	background: url(../../images/rn_top/ranking_icon.png) no-repeat;
+	width:38px;
+	height:52px;
+    z-index:1;
+}
+
+.osusume_Area .title a {
+	font-weight:bold;
+}
+
+.osusume_Area li:hover img{
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	-ms-filter: "alpha(opacity=70)";
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* お役立ち情報
+ * ------------------------- */
+
+/* info_item */
+.oyakudachi li.box{
+	float:left;
+	width:326px;
+    padding:10px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	background-color:#f7f6f6;
+	margin-bottom:15px;
+	margin-right:18px;
+	overflow: hidden;
+	/* ie7 */
+	*zoom:1;
+}
+
+.oyakudachi li.box:nth-child(2n){
+	margin-right:0;
+}
+
+/* IE8 */
+ul.oyakudachi > *:first-child + *,
+ul.oyakudachi > *:first-child + * + * + *{
+	margin-right:0;
+}
+
+.oyakudachi li.box .image{
+	float:left;
+	width: 103px;
+	margin-top:1px;
+}
+
+.oyakudachi li.box .body{
+	margin-left:113px;
+	width:211px;
+	border:solid 1px #e2e2e2;
+	border-radius: 3px;
+}
+
+.oyakudachi li.box .body .title{
+	font-weight:bold;
+	background:#FFF;
+	line-height:20px;
+	border-bottom:solid 1px #e2e2e2;
+	padding:7px 13px;
+}
+
+.oyakudachi li.box .body ul{
+	padding: 5px 9px;
+	background:#fbfbfb;
+	font-weight:bold;
+	overflow:hidden;
+	zoom:1;
+}
+
+.oyakudachi li.box .body ul li{
+	padding-left: 10px;
+	background: url(../../common/images/arrow_right_black.png) left center no-repeat;
+	line-height:1.8;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* 不動産ニュース / 不動産コラム
+ * ------------------------------- */
+
+.column_Area .cat{
+	margin-right:10px;
+	display:inline-block;
+	padding:2px 4px;
+	text-align:center;
+	color:#fff;
+	font-size:11px;
+	border-radius: 2px;
+	min-width:60px;
+}
+.column_Area .cat-money{
+    background:#de7b1f;
+}
+.column_Area .cat-loan{
+	background:#b7635b;
+}
+
+.column_Area .cat-estate{
+	background: #94a940;
+}
+
+.column_Area .cat-tax{
+	background: #5791a5;
+}
+
+.column_Area .cat-trends{
+	background:#7d70b2;
+}
+
+.column_Area .cat-others{
+	background:#c2ab1b;
+}
+
+.news_Area{
+	float:left;
+	margin-right:18px;
+	width:346px;
+}
+.column_Area{
+	float:left;
+	width:346px;
+}
+
+.news_Area .topTitle,
+.column_Area .topTitle{
+	margin-bottom:10px;
+}
+
+.news_Area .topTitle,
+.column_Area .topTitle{
+	position:relative;
+}
+
+.news_Area .topTitle .link,
+.column_Area .topTitle .link{
+	position:absolute;
+	top:7px;
+	right:0px;
+}
+
+.news_Area .topTitle .link a,
+.column_Area .topTitle .link a{
+	background:url(../../images/rn_common/icon_arrow1.png) no-repeat left 7px;
+	padding-left:10px;
+}
+
+
+.news_Area ul,
+.column_Area ul{
+	padding-top:10px;
+	line-height:1.4;
+}
+
+.news_Area li,
+.column_Area li{
+	background: url(../../images/rn_top/news_seminar_line.gif) repeat-x left top;
+	padding-top:10px;
+}
+
+.news_Area li,
+.column_Area li{
+	padding-bottom:10px;
+}
+
+
+.news_Area ul li span.date,
+.column_Area ul li span.date{
+	padding-left:5px;
+
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ノムコムからのお知らせ
+ * ------------------------- */
+
+
+.information_Area  li{
+	padding-left:12px;
+	margin-bottom:5px;
+	background: url(../../images/rn_common/icon_arrow1.png) no-repeat left 8px;
+}
+.information_Area li span.date{
+	padding-left:5px;
+}
+
+.information_Area .topTitle{
+	position:relative;
+}
+
+.information_Area .topTitle .link{
+	position:absolute;
+	top:7px;
+	right:0px;
+}
+
+.information_Area .topTitle .link a{
+	background:url(../../images/rn_common/icon_arrow1.png) no-repeat left 7px;
+	padding-left:6px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* 不動産セミナー情報
+ * ------------------------- */
+
+.seminar_Area .cat{
+	float:left;
+	margin-right:10px;
+	display:inline-block;
+	padding:2px 4px;
+	text-align:center;
+	color:#fff;
+	font-size:11px;
+	border-radius: 2px;
+	min-width:60px;
+}
+
+.seminar_Area .cat-area{
+	background:#151b5f;
+}
+
+.seminar_Area .topTitle{
+	position:relative;
+}
+
+.seminar_Area .topTitle .link{
+	position:absolute;
+	top:7px;
+	right:0px;
+}
+
+.seminar_Area .topTitle .link span.txt{
+	font-weight:bold;
+	color:#dd1c11;
+	margin-right:10px;
+}
+
+.seminar_Area .topTitle .link a{
+	background:url(../../images/rn_common/icon_arrow1.png) no-repeat left 7px;
+	padding-left:6px;
+}
+
+
+.seminar_Area li{
+	background: url(../../images/rn_top/news_seminar_line.gif) repeat-x left bottom;
+	padding:5px 0 10px;
+	margin-bottom:5px;
+	overflow:hidden;
+	zoom:1;
+}
+
+.seminar_Area li .date{
+	float:left;
+	width:110px;
+	font-weight:bold;
+}
+
+.seminar_Area li .text{
+	float:left;
+	background:url(../../images/rn_common/icon_arrow1.png) no-repeat left 8px;
+	padding-left:12px;
+	width:490px;
+	margin-left:10px;
+}
+
+.seminar_Area li .text span{
+	padding-left:5px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ノムコムの関連サイト
+ * ------------------------- */
+
+.relatedsite_Area li{
+	float:left;
+	margin:0 0 15px 25px;
+	border: 1px solid #d3d3d3;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	width:218px;
+
+}
+
+.relatedsite_Area li:nth-child(1),
+.relatedsite_Area li:nth-child(4){
+	margin-left:0;
+}
+
+/* IE8 */
+ul.relatedsite_Area > *:first-child,
+ul.relatedsite_Area > *:first-child + * + * + *{
+	margin-left:0;
+}
+
+.relatedsite_Area li .rsaText{
+	padding: 10px 0;
+	background:#f6f7f0 url(../../images/rn_top/icon-link1.png) no-repeat right top;
+	text-align:center;
+	font-weight:bold
+}
+
+
+/* side_service_list
+ * ------------------------- */
+
+.service_title{
+	background: url(../../images/rn_top/img_side_service_title.png) no-repeat 0 0;
+	width:178px;
+	height:42px;
+	line-height:42px;
+	padding:0 10px;
+	font-weight:bold;
+}
+
+ .side_service_list{
+ 	padding-top:10px;
+}
+
+ .side_service_list li{
+ 	margin-bottom:6px;
+	line-height:1.2;
+}
+
+.side_service_list .count1{
+background: url(../../images/rn_top/img_side_service_count1.png) no-repeat 5px center;
+padding-left:38px;
+}
+.side_service_list .count2{
+background: url(../../images/rn_top/img_side_service_count2.png) no-repeat 5px center;
+padding-left:38px;
+}
+.side_service_list .count3{
+background: url(../../images/rn_top/img_side_service_count3.png) no-repeat 5px center;
+padding-left:38px;
+ 	padding-top:10px;
+ 	padding-bottom:10px;
+}
+.side_service_list .count4{
+background: url(../../images/rn_top/img_side_service_count4.png) no-repeat 5px center;
+padding-left:38px;
+}
+.side_service_list span{
+	color:#90a909;
+	font-weight:bold;
+}
+
+
+.side_service_btnbox{
+background: url(../../images/rn_top/dot_line.png) no-repeat left top;
+	position:relative;
+}
+.side_service_btnbox .cara{
+	position:absolute;
+	bottom:30px;
+	left:2px;
+	}
+
+
+.side_service_btnbox .list_item {
+	text-align:right;
+	line-height: 1.2;
+	padding:10px 2px 10px 0;
+
+}
+.side_service_btnbox .list_item a {
+	color: #1565c0;
+	text-decoration:none;
+	font-weight:bold;
+	cursor: pointer;
+}
+.side_service_btnbox .list_item a span {
+	display: inline-block;
+	font-weight: bold;
+	background: url(../../images/rn_common/icon_arrow2_off.png) no-repeat 98% center;
+	padding-right:13px;
+}
+.side_service_btnbox .list_item a:hover span{
+	background-image: url(../../images/rn_common/icon_arrow2_on.png);
+}
+
+.side_service_btnbox .list_item a:hover {
+	color:#ff0000;
+}
+
+
+.side_service_btnbox .link a{
+	display: block;
+	border-top: solid 2px #57bae3;
+	border-right: solid 2px #57bae3;
+	border-left: solid 2px #57bae3;
+	border-bottom:solid 2px #57bae3;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	width:184px;
+	height:31px;
+	padding-left:10px;
+	line-height:31px;
+	text-align:center;
+	color: #fff;
+	font-weight:bold;
+	text-decoration:none;
+	background:url(http://www.nomu.com/images/premium/arrow_request.png) no-repeat 13px center #57bae3;
+	margin:0 auto;
+}
+
+.side_service_btnbox .link a:hover{
+	display: block;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	background-image:url(../../images/rn_common/arrow_blue.png);
+	background-color: #ffffff;
+	border: solid 2px #57bae3;
+	color: #000 !important;
+}
+.latest{
+   font-size:11px;
+   color:#d34833;
+   font-weight:bold;
+}
+
+
+

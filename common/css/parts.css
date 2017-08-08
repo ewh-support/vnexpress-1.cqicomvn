@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+
+/* ---------------------------------------------
+*   module_alert
+--------------------------------------------- */
+
+
+.module_alert {
+	width: 280px;
+	display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+	overflow: hidden;
+    z-index: 9999;
+    margin: 0 auto;
+	padding:14px 14px 0 0;
+}
+
+.module_alert .close_btn{
+	position:absolute;
+	background: url("../images/bt_close.png") left top no-repeat;
+	width:44px;
+	height:44px;
+	top:0px;
+	right:0;
+	text-indent:100%;
+	cursor:pointer;
+	white-space:nowrap;
+	overflow:hidden;
+	z-index: 10000;
+}
+
+.module_alert .close_btn:hover{
+	background: url("../images/bt_close.png") left bottom no-repeat;
+}
+
+.popup_delete{
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+
+
+/*  alert_upper
+--------------------------------------------- */
+.alert_upper {
+	position:relative;
+	text-align: center;
+	padding: 18px 0;
+	border-bottom: 1px solid #d3d3d3;
+}
+
+/* -- item_text -- */
+.alert_upper .item_text {
+	font-size: 115%;
+	font-weight: bold;
+}
+.alert_upper .item_text + .item_text {
+	margin-top: 12px;
+}
+
+/* item_marked */
+.alert_upper .item_marked {
+	color: #da171e;
+	font-weight:bold;
+}
+
+/* item_image */
+.alert_upper .item_image {
+	position: relative;
+	top: -2px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 5px;
+}
+
+
+/*  alert_lower
+--------------------------------------------- */
+.alert_lower {
+	padding: 11px 0 10px;
+	text-align: center;
+}
+
+.alert_lower a{
+	font-weight:bold;
+}
+
+
+/* ---------------------------------------------
+*   breadcrumb
+--------------------------------------------- */
+
+/*  item_breadcrumbs
+--------------------------------------------- */
+#breadcrumb .item_breadcrumbs {
+	letter-spacing: -0.4em;
+	padding: 14px 0 16px;
+}
+
+/* -- item_breadcrumb -- */
+#breadcrumb .item_breadcrumb {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	letter-spacing: normal;
+	padding-right: 13px;
+	background: url(../images/arrow_breadcrumb.png) right center no-repeat;
+	margin-right: 5px;
+}
+
+/* -- item_breadcrumb (skin) -- */
+#breadcrumb .item_breadcrumb.skin_last {
+	padding-right: 0;
+	background: none;
+	margin-right: 0;
+}
+
+/* -- item_breadcrumb_link -- */
+#breadcrumb .item_breadcrumb_link {
+	display: block;
+	font-size: 78.5%;
+}
+
+
